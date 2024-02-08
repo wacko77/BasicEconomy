@@ -1,5 +1,6 @@
-package me.wacko.basiceconomy.vaults;
+package me.wacko.basiceconomy.command;
 
+import me.wacko.basiceconomy.util.PVUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -32,6 +33,8 @@ public class PVCommands implements CommandExecutor {
                 }
 
             }
+        }else{
+            sender.sendMessage("Only players can use this command!");
         }
 
         return true;

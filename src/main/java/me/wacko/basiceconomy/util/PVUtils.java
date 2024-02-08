@@ -1,4 +1,4 @@
-package me.wacko.basiceconomy.vaults;
+package me.wacko.basiceconomy.util;
 
 import me.wacko.basiceconomy.BasicEconomy;
 import org.bukkit.NamespacedKey;
@@ -8,7 +8,6 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.util.io.BukkitObjectInputStream;
 import org.bukkit.util.io.BukkitObjectOutputStream;
-import org.checkerframework.checker.units.qual.N;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

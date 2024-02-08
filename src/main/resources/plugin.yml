@@ -6,3 +6,6 @@ commands:
   pv:
     usage: /<command>
     description: open your personal vault
+  shop:
+    usage: /<command>
+    description: opens the shop
