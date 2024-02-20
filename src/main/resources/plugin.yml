@@ -9,3 +9,6 @@ commands:
   shop:
     usage: /<command>
     description: opens the shop
+  bal:
+    usage: /<command>
+    description: displays a user's balance

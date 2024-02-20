@@ -1,6 +1,8 @@
 package me.wacko.basiceconomy.listener;
 
 import me.wacko.basiceconomy.BasicEconomy;
+import me.wacko.basiceconomy.util.ShopBuy;
+import me.wacko.basiceconomy.util.ShopUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -11,6 +13,7 @@ import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.inventory.Inventory;
 
 public class ShopListener implements Listener {
+
 
     @EventHandler
     public static void onClick(InventoryClickEvent e){
@@ -25,7 +28,13 @@ public class ShopListener implements Listener {
 
                 Inventory bb = Bukkit.createInventory(p, 9*6, ChatColor.AQUA + "Building Blocks");
 
-
+                bb.setItem(0, ShopUtil.getDirt);
+                if(e.getSlot() == 0) {
+                    if(e.isLeftClick()){
+                        ShopBuy.Buy(p);
+                    }
+                }
+                bb.setItem(1, ShopUtil.getGrassBlock);
 
                 p.openInventory(bb);
 
