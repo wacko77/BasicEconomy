@@ -1,5 +1,6 @@
 package me.wacko.basiceconomy;
 
+import me.wacko.basiceconomy.auction.command.AuctionCommand;
 import me.wacko.basiceconomy.core.common.listener.GiveawaysListener;
 import me.wacko.basiceconomy.playervault.command.PVCommands;
 import me.wacko.basiceconomy.shop.command.ShopCommand;
@@ -26,9 +27,10 @@ public final class BasicEconomy extends JavaPlugin {
             return;
         }
 
-        getCommand("pv").setExecutor(new PVCommands());
+        getCommand("playervault").setExecutor(new PVCommands());
         getCommand("shop").setExecutor(new ShopCommand());
-        getCommand("bal").setExecutor(new VaultCommands());
+        getCommand("balance").setExecutor(new VaultCommands());
+        getCommand("auctions").setExecutor(new AuctionCommand());
 
         ShopUtil shopUtil = new ShopUtil(economy);
 

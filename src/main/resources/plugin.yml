@@ -7,12 +7,18 @@ api-version: '1.20'
   #- [VaultAPI]
 
 commands:
-  pv:
-    usage: /<command>
+  playervault:
     description: open your personal vault
+    aliases:
+      - pv
   shop:
-    usage: /<command>
     description: opens the shop
-  bal:
-    usage: /<command>
+  balance:
     description: displays a user's balance
+    aliases:
+      - bal
+  auctions:
+    description: opens the auctions gui
+    aliases:
+      - ah
+
