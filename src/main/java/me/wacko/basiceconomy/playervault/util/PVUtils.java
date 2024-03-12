@@ -1,4 +1,4 @@
-package me.wacko.basiceconomy.util;
+package me.wacko.basiceconomy.playervault.util;
 
 import me.wacko.basiceconomy.BasicEconomy;
 import org.bukkit.NamespacedKey;

@@ -1,6 +1,6 @@
-package me.wacko.basiceconomy.command;
+package me.wacko.basiceconomy.playervault.command;
 
-import me.wacko.basiceconomy.util.PVUtils;
+import me.wacko.basiceconomy.playervault.util.PVUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

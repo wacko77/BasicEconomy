@@ -1,11 +1,12 @@
 package me.wacko.basiceconomy;
 
-import me.wacko.basiceconomy.command.PVCommands;
-import me.wacko.basiceconomy.command.ShopCommand;
+import me.wacko.basiceconomy.core.common.listener.GiveawaysListener;
+import me.wacko.basiceconomy.playervault.command.PVCommands;
+import me.wacko.basiceconomy.shop.command.ShopCommand;
 
-import me.wacko.basiceconomy.command.VaultCommands;
-import me.wacko.basiceconomy.listener.PVListeners;
-import me.wacko.basiceconomy.listener.ShopListener;
+import me.wacko.basiceconomy.core.command.VaultCommands;
+import me.wacko.basiceconomy.playervault.listener.PVListeners;
+import me.wacko.basiceconomy.shop.util.ShopUtil;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -29,8 +30,10 @@ public final class BasicEconomy extends JavaPlugin {
         getCommand("shop").setExecutor(new ShopCommand());
         getCommand("bal").setExecutor(new VaultCommands());
 
+        ShopUtil shopUtil = new ShopUtil(economy);
+
         getServer().getPluginManager().registerEvents(new PVListeners(), this);
-        getServer().getPluginManager().registerEvents(new ShopListener(), this);
+        getServer().getPluginManager().registerEvents(new GiveawaysListener(), this);
 
     }
 

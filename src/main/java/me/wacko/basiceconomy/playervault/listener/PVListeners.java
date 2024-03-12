@@ -1,7 +1,7 @@
-package me.wacko.basiceconomy.listener;
+package me.wacko.basiceconomy.playervault.listener;
 
 import me.wacko.basiceconomy.BasicEconomy;
-import me.wacko.basiceconomy.util.PVUtils;
+import me.wacko.basiceconomy.playervault.util.PVUtils;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
