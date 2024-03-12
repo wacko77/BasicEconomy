@@ -10,15 +10,6 @@ import org.bukkit.inventory.ItemStack;
 
 public class MainShopGUI extends AbstractGUI {
 
-    private BuildingBlocks buildingBlocks;
-    private Enchantments enchantments;
-    private Farming farming;
-    private Food food;
-    private MobDrops mobDrops;
-    private Ores ores;
-    private Potions potions;
-    private Spawners spawners;
-
     public MainShopGUI() {
         super(9*6, "SHOP");
 
