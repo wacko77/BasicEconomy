@@ -1,5 +1,6 @@
 package me.wacko.basiceconomy.auction.gui;
 
+import me.wacko.basiceconomy.BasicEconomy;
 import me.wacko.basiceconomy.auction.gui.core.ActiveAuctionsGUI;
 import me.wacko.basiceconomy.auction.gui.core.CreateAuctionGUI;
 import me.wacko.basiceconomy.auction.gui.core.PlayerBidsGUI;
@@ -14,13 +15,13 @@ import java.util.List;
 
 public class AuctionGUI extends AbstractGUI {
 
-    public AuctionGUI() {
+    public AuctionGUI(BasicEconomy plugin) {
         super(9*3, "Auctions");
 
         List<String> aaLore = getAALore();
         ItemStack aaItem = ItemUtilForGUI.setItemMeta(ChatColor.GOLD + "Active Auctions", Material.GOLD_BLOCK, aaLore.toString());
         setItem(11, aaItem, player -> {
-            ActiveAuctionsGUI aaGUI = new ActiveAuctionsGUI();
+            ActiveAuctionsGUI aaGUI = new ActiveAuctionsGUI(plugin);
             aaGUI.open(player);
         });
 
@@ -34,7 +35,7 @@ public class AuctionGUI extends AbstractGUI {
         List<String> caLore = getCALore();
         ItemStack caItem = ItemUtilForGUI.setItemMeta(ChatColor.GREEN + "Create Auction!", Material.GOLDEN_HORSE_ARMOR, caLore.toString());
         setItem(15, caItem, player -> {
-            CreateAuctionGUI caGUI = new CreateAuctionGUI();
+            CreateAuctionGUI caGUI = new CreateAuctionGUI(plugin);
             caGUI.open(player);
         });
 

@@ -5,10 +5,10 @@ import org.bukkit.inventory.ItemStack;
 
 public class Auction {
 
-    private ItemStack item;
-    private Player host;
-    private int id;
-    private long duration;
+    private final ItemStack item;
+    private final Player host;
+    private final int id;
+    private final long duration;
     private long endTime;
 
     private boolean started;
