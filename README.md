@@ -1,6 +1,6 @@
 An all in one economy essentials plugin. Currently features auctions, playervaults, and a well designed shop.
 
-**Note: This plugin is in a very early stage, so some features are not yet available.
+**Note: This plugin is in a very early stage, so some features are not yet available.**
 
 ## Auctions:
   **Features:**
