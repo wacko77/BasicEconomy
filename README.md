@@ -11,7 +11,7 @@ An all in one economy essentials plugin. Currently features auctions, playervaul
   - Customizable text that can be set in config.yml
     
   **Commands:**
-  - **/auctions
+  - **/auctions**
     - opens the main gui menu that shows an option to look at active auctions, player bids, and to create an auction 
 
 ## Playervaults:
